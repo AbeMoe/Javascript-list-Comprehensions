@@ -38,11 +38,11 @@ function compList(lists,parentList) {
     }
     //Recursive case
     else
-        return compList(lists,null,returnList);
+        return compList(lists,returnList);
 }
 
 
-somevar = compList(listHolder,null);
+somevar = compList(listHolder);
 
 for(var x in somevar)
     print(somevar[x]);
